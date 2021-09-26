@@ -1,18 +1,38 @@
 # Project Title
 
-Just after the title, introduce your project by describing attractively what the project is about and what is the main problem that inspires you to create this project or what is the main contribution for the potential user of your project.
+This is the Loan Qualifier Application for challenge #2! I ask for various inputs from the user, and then 
+check to see if he qualifies for the various loans I have available which I upload from a CSV file.
+
+If the user qualifies for loans, I then ask if they would like to save the results to a CSV file. If they say yes,
+I have them enter a file and directory and then all the loans they qualified for are saved to this CSV file.
 
 ---
 
 ## Technologies
 
-Describe the technologies required to use your project such as programming languages, libraries, frameworks, and operating systems. Be sure to include the specific versions of any critical dependencies that you have used in the stable version of your project.
+I am using python version 3.7.10 and am importing the following from the built-in libraries and from functions i've created myself:
+import sys
+import fire
+import questionary
+from pathlib import Path
 
+from qualifier.utils.fileio import load_csv
+from qualifier.utils.writeToCSV import writeToCSV
+
+from qualifier.utils.calculators import (calculate_monthly_debt_ratio,calculate_loan_to_value_ratio,)
+
+from qualifier.filters.max_loan_size import filter_max_loan_size
+from qualifier.filters.credit_score import filter_credit_score
+from qualifier.filters.debt_to_income import filter_debt_to_income
+from qualifier.filters.loan_to_value import filter_loan_to_value
 ---
 
 ## Installation Guide
 
-In this section, you should include detailed installation notes containing code blocks and screenshots.
+I have python version 3.7.10 and git version 2.33.0.windows.2 installed on a laptop running windows 10 pro.
+
+I have VS Code version 1.60.1 installed.
+
 
 ---
 
