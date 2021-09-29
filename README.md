@@ -79,5 +79,4 @@ I put in code that saves CSV file with hardcoded name "LoanResults.csv" to the d
 ---
 
 ## License
-
-When you share a project on a repository, especially a public one, it's important to choose the right license to specify what others can and can't with your source code and files. Use this section to include the license you want to use.
+No licenses required. Just install everything for free, pull from my repository, and enjoy!
